@@ -73,3 +73,14 @@ type Nullable<T> = { [K in keyof T]: T[K] : null }
 ```typescript
 type TODO = any;
 ```
+
+## Conditional Types
+
+```typescript
+// Syntax
+T extends U ? X : Y
+```
+
+- T extends U: The condition checks if T can be assigned to U.
+- If the condition is true, the type X is returned.
+- If the condition is false, the type Y is returned.
